@@ -32,10 +32,11 @@ const Hero = () => {
   return (
     
     <div className=' h-full text-center'>
-        <div style={bgImageStyle} className=' h-[420px] relative'></div>  
-        <div className=' w-[800px] absolute z-[999] top-[70%] left-[24%] text-center max-lg:left-[-13%] overflow-x-hidden'>
-            <h1 className=' max-lg:text-3xl font-bold text-5xl text-green pb-4 uppercase'> {imageSlide[currentState].title}</h1>
-            <p className=' max-lg:text-lg text-2xl text-light font-semibold'> {imageSlide[currentState].body}</p>
+        <div style={bgImageStyle} className=' h-[420px] relative blur-[2px]'></div>  
+        <div className=' absolute z-[999] left-0 right-0 ml-auto mr-auto w-full top-[50%] font-montserrat'>
+            <h1 className=' max-lg:text-4xl font-bold text-5xl text-green pb-3 uppercase'> {imageSlide[currentState].title}</h1>
+            <p className=' max-lg:text-lg text-2xl text-light font-semibold mt-3 mb-5'> {imageSlide[currentState].body}</p>
+            <button className=' bg-green text-light w-36 h-11 rounded-2xl text-base font-bold mb-5'> JOIN WITH US </button>
 
             <div className=' flex items-center justify-center p-4'>
             {

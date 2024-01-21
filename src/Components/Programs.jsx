@@ -3,7 +3,7 @@ import React from 'react'
 
 const Programs = ({programData}) => {
   return (
-    <div className=' px-12 max-lg:px-6'>
+    <div className=' px-12 max-lg:px-6 max-sm:px-6'>
       <div className=''>
         <img src={programData.image} alt="" className='my-3'/>
         <h1 className=' font-medium my-3 text-lg'> {programData.title}</h1>

@@ -15,7 +15,7 @@ const HomePage = () => {
   return (
     <div>
       <Hero/> 
-      <div className=' my-11 mx-24 '>
+      <div className=' my-11 mx-24 max-[360px]:mx-7 max-lg:mx-12'>
       <div className=' px-11 max-lg:px-6'>
         <h1 className=' text-3xl font-semibold uppercase tracking-wide '> Our Programs</h1>
         <div className=' h-[5px] w-14 rounded bg-green my-4'></div>
@@ -26,7 +26,7 @@ const HomePage = () => {
       {programElement}
       </div>
       <div>
-        <img src="images/program.jpg" width={700} alt="program" />
+        <img src="images/program.jpg" width={700} alt="program" className=' my-5' />
       </div>
 
       </div>
