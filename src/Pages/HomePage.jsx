@@ -2,6 +2,7 @@ import React from 'react'
 import Hero from '../Components/Hero'
 import Programs from '../Components/Programs'
 import programDatas from '../programDatas'
+import { ProgramsImage } from '../Components/ProgramsImage'
 
 
 const HomePage = () => {
@@ -15,26 +16,27 @@ const HomePage = () => {
   return (
     <div>
       <Hero/> 
-      <div className=' my-11 mx-24 max-[360px]:mx-7 max-lg:mx-12'>
-      <div className=' px-11 max-lg:px-6'>
-        <h1 className=' text-3xl font-semibold uppercase tracking-wide '> Our Classes</h1>
-        <div className=' h-[5px] w-14 rounded bg-green my-4'></div>
-        <p className=' text-lg my-5'>Codefit programs are designed for universal scalability, making it the perfect application for any committed individual regardless of experience.</p>
-      </div>
-      <div className=' flex max-lg:flex-col'>
-      <div className=' grid grid-cols-2 max-lg:grid-cols-1'>
-      {programElement}
-      </div>
-      <div>
-        <img src="images/program.jpg" width={700} alt="program" className=' my-5' />
-      </div>
+      <div className=' flex items-center justify-between mx-auto max-w-[1400px] font-inter my-7 px-14'>
+        <div className=' px-[70px]'>
+          <h1 className=' font-bold text-4xl uppercase'>Our Programs</h1>
+          <div className=' w-16 h-[5px] bg-green rounded-full my-3'></div>
+          <p className=' text-base my-8'>Skyfit programs are designed for universal scalability, 
+             making it the perfect application for any committed individual regardless of experience.
+           </p>
+           <div className=' grid grid-cols-2 grid-rows-2 gap-5'>
+             {programElement}
+           </div>  
+
+          </div>
+      
+          <div className=' mt-10'>
+             <ProgramsImage/>
+          </div>
+
+
 
       </div>
 
-        
-      </div>
-      
-      
     </div>
   )
 }
