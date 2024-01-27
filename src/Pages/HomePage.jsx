@@ -41,17 +41,14 @@ const HomePage = () => {
           <div className='mt-10 '>
              <ProgramsImage/>
           </div>
-
-
-
       </div>
       <div className=' py-[90px]'>
       <Discount/>
       </div>
       <div className=' max-w-[1400px] flex items-center justify-center flex-col mb-[90px]'>
-        <h2> OUR FEATURED CLASSES </h2>
-        <div className=' w-20 h-1 bg-green my-4'></div>
-        <p className=' max-w-3xl text-center'>We offer a variety of classes to fit your specific needs. 
+        <h2 className=' text-4xl font-bold uppercase '> OUR FEATURED CLASSES </h2>
+        <div className=' w-24 h-1 bg-green my-4'></div>
+        <p className=' max-w-4xl text-center mt-9 mb-12 text-lg font-normal'>We offer a variety of classes to fit your specific needs. 
           Our program is designed to bring you additional benefits of a well-rounded fitness program. 
           In each of our classes, our focus is building consistency over time, and then increasing intensity 
           relative to the individual. 

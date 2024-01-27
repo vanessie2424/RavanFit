@@ -17,7 +17,11 @@ export default {
         'green': '#28a745',
         'light': '#f8f9fa',
         'dark': '#343a40',
+        'greenlight': '#c1fec1',
       },
+      opacity:{
+        'opacity-green': '0.4'
+      }
    
      
     },

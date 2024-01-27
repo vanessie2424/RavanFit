@@ -14,10 +14,10 @@ export const Classes = ({classData}) => {
       };
  
   return (
-    <div className=' w-[330px] rounded-lg bg-white shadow-lg'>
-        <div style={classBackground} className=' rounded-t-lg'>
-            <div className=' h-full flex items-center justify-center'>
-                <Button type="small"> Details </Button>
+    <div className=' w-[330px] rounded-lg bg-white shadow-lg  '>
+        <div style={classBackground} className=' rounded-t-lg overflow-hidden '>
+            <div className=' h-full w-full flex items-center justify-center bg-greenlight opacity-40 relative top-0 left-[-100%] hover:left-0'>
+                <Button type="small" className = " opacity-90"> Details </Button>
             </div>
         </div>
         <div className=' p-5 flex flex-col gap-4 justify-center items-center'>
