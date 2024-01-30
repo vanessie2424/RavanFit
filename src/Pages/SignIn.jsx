@@ -1,8 +1,8 @@
 import React from 'react'
 
-function SignUp(){
+function SignIn(){
     return(
         <>hello</>
     )
 }
-export default SignUp
+export default SignIn
