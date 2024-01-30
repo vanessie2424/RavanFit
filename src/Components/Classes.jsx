@@ -1,5 +1,6 @@
 import React from 'react'
 import { Button } from './Button'
+import { Link } from 'react-router-dom';
 
 export const Classes = ({classData}) => {
 
@@ -14,10 +15,10 @@ export const Classes = ({classData}) => {
       };
  
   return (
-    <div className=' w-[330px] rounded-lg bg-white shadow-lg  '>
-        <div style={classBackground} className=' rounded-t-lg overflow-hidden '>
-            <div className=' h-full w-full flex items-center justify-center bg-greenlight opacity-40 relative top-0 left-[-100%] hover:left-0'>
-                <Button type="small" className = " opacity-90"> Details </Button>
+    <div className=' w-[330px] rounded-lg bg-white shadow-lg'>
+        <div style={classBackground} className=' rounded-t-lg overflow-hidden relative group'>
+            <div className=' h-full w-full flex items-center justify-center opacity-60 bg-greenlight absolute top-0 left-[-100%] group-hover:left-0 duration-300 z-20'>
+                <Button type="small" className = " z-40"> <Link> Details </Link>  </Button>
             </div>
         </div>
         <div className=' p-5 flex flex-col gap-4 justify-center items-center'>
